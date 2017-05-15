@@ -1,0 +1,12 @@
+1.jps：列出正在运行的JVM进程及VMID
+	jps -mlv	显示JVM进程的主类、参数及启动时JVM参数
+2.jstat:监控JVM运行时的状态信息
+	jstat -gcutil VMID		监视Java堆状态信息
+3.jinfo:实时查看和调整虚拟机参数
+	jinfo -flag 参数名 VMID	查看指定JVM参数
+	jinfo -sysprops	VMID	打印JVM进程的System.getProperties()系统配置信息
+4.jmap：用于生成堆转储快照(一般称为heapdump或dump文件)
+	jmap -heap VMID		显示Java堆详细信息,如使用何种回收器、JVM参数配置、分代状态等
+5.jhat：与jmap工具配合使用,用来分析由jmap生成的堆转储快照
+6.jstack：用于生成JVM当前时刻的线程快照(线程栈信息),可用来分析每条线程的当前状态
+	jstack -l VMID		显示当前线程状态及锁的附加信息
