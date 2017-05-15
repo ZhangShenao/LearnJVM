@@ -32,3 +32,6 @@
 8.并发收集器设置
 	-XX:+CMSIncrementalMode		设置为增量模式。适用于单CPU情况。
 	-XX:ParallelGCThreads=n		设置并发收集器年轻代收集方式为并行收集时，使用的CPU数。并行收集线程数。
+9.性能参数设置	
+	-XX:PretenureSizeThreshold=		令内存大于该值的对象直接在老年代进行分配
+	-XX:MaxTenuringThreshold=		设置对象晋升老年代的年龄阈值
