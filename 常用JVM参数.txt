@@ -35,3 +35,4 @@
 9.性能参数设置	
 	-XX:PretenureSizeThreshold=		令内存大于该值的对象直接在老年代进行分配
 	-XX:MaxTenuringThreshold=		设置对象晋升老年代的年龄阈值
+	-XX:+TraceClassLoading			查看类加载信息
