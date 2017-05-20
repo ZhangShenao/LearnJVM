@@ -1,0 +1,7 @@
+JVM的默认收集器
+1.-server模式
+	新生代:Parallel Scavenge
+	老年代:Parallel Old
+2.-client模式
+	新生代:Serial
+	老年代:Serial Old
