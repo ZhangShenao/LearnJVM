@@ -36,3 +36,4 @@
 	-XX:PretenureSizeThreshold=		令内存大于该值的对象直接在老年代进行分配
 	-XX:MaxTenuringThreshold=		设置对象晋升老年代的年龄阈值
 	-XX:+TraceClassLoading			查看类加载信息
+	-XX:+HeapDumpOnOutOfMemoryError		让JVM在出现内存溢出异常时Dump出当前的内存堆转储快照以便于事后分析。
