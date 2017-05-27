@@ -28,7 +28,7 @@ public class DeadLoopClass {
 		@Override
 		public void run() {
 			System.out.println("线程: " + Thread.currentThread().getName() + " 启动");
-			MyClass myClass = new MyClass();
+			new MyClass();
 			System.out.println("线程: " + Thread.currentThread().getName() + " 结束");
 		}
 	}
